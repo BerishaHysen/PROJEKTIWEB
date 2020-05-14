@@ -1,0 +1,136 @@
+:root {
+   --gray-color: #333;
+   --light-color: #f4f4f4;
+   --red-color: #db1c0f;
+   --blue-color: #1b51cf;
+   --violet-color: #6e0194;
+}
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html,
+body{
+   font-size: 12px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+   text-decoration: none;
+   color: var(--gray-color);
+}
+
+ul{
+   list-style: none;
+}
+
+.primary-a {
+   border-bottom: 1px solid var(--red-color);
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+
+/* NAVBAR */
+#navbar{
+   background: #fff;
+   position: sticky;
+   top: 0;
+}
+
+#navbar .content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+
+#navbar .logo {
+   width: 50px;
+}
+
+#navbar .content ul {
+   display: flex;
+}
+
+#navbar .content ul li a {
+   padding-bottom: 5px;
+   margin: 10px 20px;
+}
+
+#navbar .content ul li a:hover{
+   border-bottom: 1px solid var(--gray-color);
+}
+
+#navbar .content .button input {
+   background: var(--light-color);
+   padding: 5px 10px;
+   border-radius: 32px;
+   border: none;
+}
+
+#navbar .content .button input:focus{
+   outline: none;
+   border: 1px solid var(--red-color);
+}
+
+
+/* HEADER */
+
+#header{
+   background: url('../img/bg2.jpg') no-repeat center center/cover;
+   height: 500px;
+   color: var(--light-color);
+}
+
+#header .header-content {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   /* align-items: center; */
+   top: 60px;
+   left: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+#header .header-content .texti{
+   margin-bottom: 30px;
+}
+
+
+#header .header-content h3,
+#header .header-content p{
+   font-size: 1.5rem;
+   width: 50%;
+}
+#header .header-content h3{
+   font-size: 2rem;
+   margin-bottom: 10px;
+   
+}
+
+#header .header-content a {
+   font-size: 1.2rem;
+   margin-top: 10px;
+   display: inline-block;
+   padding: 10px 20px;
+   background: var(--red-color);
+   color: var(--light-color);
+}
+
+#header .header-content a:hover{
+   background: white;
+   color: var(--gray-color);
+}
+
+
+
