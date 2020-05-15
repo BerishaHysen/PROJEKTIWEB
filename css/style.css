@@ -232,7 +232,7 @@ ul{
 
 
 #pjesa-1 {
-   height: 400px;
+   min-height: 300px;
 }
 
 #pjesa-1 .articles-container {
@@ -319,7 +319,7 @@ ul{
 
 
 #pjesa-2 {
-   height: 1000px;
+   min-height: 600px;
    background: var(--light-color);
 }
 
@@ -345,13 +345,6 @@ ul{
    display: grid;
    grid-gap: 1rem;
 }
-
-/* #pjesa-2 .articles-container .left-side p {
-   display: inline-block;
-   justify-self: right;
-   color: rgb(88, 88, 88);
-} */
-
 
 #pjesa-2 .articles-container .left-side .card{
    display: grid;
@@ -389,3 +382,65 @@ ul{
    grid-template-columns: 1fr 3fr;
    align-items: center;
 }
+
+
+/* SECTION: Pjesa-3 */
+
+#pjesa-3 {
+   min-height: 400px;
+   background: var(--gray-color);
+}
+
+#pjesa-3 .articles-container3 .video-content img {
+   width: 200px;
+   
+}
+
+#pjesa-3 .articles-container3{
+   display: grid;
+   grid-gap: 1rem;
+   grid-template-columns: repeat(5, 1fr);
+}
+
+
+#pjesa-3 .articles-container3 .video-content img {
+   width: 100%;
+   height: 100%;
+}
+
+#pjesa-3 .articles-container3 .video-content:first-child{
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   grid-column: 1 / span 2;
+   grid-row: 1 / span 2;
+}
+
+
+#pjesa-3 .articles-container3 .video-content .fotoja {
+   position: relative;
+}
+
+#pjesa-3 .articles-container3 .video-content .fotoja #psh {
+   position: absolute;
+   left: 4%;
+   top: 4%;
+}
+
+
+#pjesa-3 .articles-container3 .video-content .fotoja .ikona {
+   position: absolute;
+   color: white;
+   padding: 10px;
+   border-radius: 50%;
+   background: var(--red-color);
+   bottom: 5%;
+   right: 5%;
+}
+
+#pjesa-3 .articles-container3 .video-content .fotoja .ikona:hover {
+   background: var(--light-color);
+   color: var(--red-color);
+}
+
+
