@@ -38,6 +38,63 @@ ul{
    padding: 0 10px;
 }
 
+.category {
+   display: inline-block;
+   color: white;
+   font-size: 0.7rem;
+   text-transform: uppercase;
+   padding: 0.4rem 0.6rem;
+   margin-bottom: 0.5rem;
+   border-radius: 2px;
+}
+
+.category-politics {
+   background: var(--red-color);
+}
+.category-tech {
+   background: var(--violet-color);
+}
+.category-sports {
+   background: var(--blue-color);
+}
+
+
+
+.py-1 {padding: 1.5rem 0;}
+.py-2 {padding: 2rem 0;}
+.py-3 {padding: 3rem 0;}
+.p-1 {padding: 1.5rem;}
+.p-2 {padding: 2rem;}
+.p-3 {padding: 3rem;}
+
+.btn {
+   display: inline-block;
+   padding: 5px 10px;
+   color: white;
+   transition: background 0.5s;
+   
+
+}
+
+.btn-red
+{
+   background: var(--red-color);
+}
+
+.btn-blue {
+   background: var(--blue-color);
+}
+
+.btn-violet {
+   background: var(--violet-color);
+}
+
+.btn:hover {
+   background: var(--light-color);
+   color: var(--gray-color);
+
+}
+
 /* NAVBAR */
 #navbar{
    background: #fff;
@@ -102,7 +159,6 @@ ul{
    background: #cc1a0d; 
 }
 
-
 /* HEADER */
 
 #header{
@@ -166,18 +222,89 @@ ul{
    padding: 20px 0;
 }
 
-#pjesa1 .section1-content {
+
+#pjesa-1 {
+   height: 400px;
+}
+
+#pjesa-1 .articles-container {
    display: grid;
-   grid-template-rows: 3;
+   grid-template-columns: 1.5fr 1fr;
+   grid-gap: 1rem;
 }
 
-#pjesa1 .section1-content .ana-majt{
-   height: 80%;
-   background: url(../img/foto1.jpg) no-repeat center center/cover;
+#pjesa-1 {
+   background: var(--light-color);
+   color: var(--light-color);
+}
+
+/* Right-Side */
+#pjesa-1 .articles-container .right-side {
+   background: url('../img/bg.jpg') no-repeat top center/cover;
+   height: 300px;
+   color: white;
+   position: relative;
+}
+
+#pjesa-1 .articles-container .right-side .all-content {
+   height: 100%;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.5); 
 }
 
 
+#pjesa-1 .articles-container .right-side .text-content {
+   position: absolute;
+   bottom: 0;
+   width: 50%;
+   margin-bottom: 20px;
+}
 
+#pjesa-1 .articles-container .right-side .text-content p,
+#pjesa-1 .articles-container .right-side .text-content h1 {
+   padding-bottom: 10px;
+}
 
+/* Left-Side */
+#pjesa-1 .articles-container .left-side {
+   display: grid;
+   grid-gap: 1rem;
+}
 
+#pjesa-1 .articles-container .left-side a {
+   color: var(--light-color);
+
+}
+
+#pjesa-1 .articles-container .left-side .first {
+   background: url('../img/foto1.jpg') no-repeat center center/cover;
+   position: relative;
+}
+
+#pjesa-1 .articles-container .left-side .second {
+   background: url('../img/foto1.jpg') no-repeat center center/cover;
+   position: relative;
+}
+
+#pjesa-1 .articles-container .left-side .third {
+   background: url('../img/foto1.jpg') no-repeat center center/cover;
+   position: relative;
+}
+
+#pjesa-1 .articles-container .left-side .all-content{
+   height: 100%;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.4); 
+   
+}
+
+#pjesa-1 .articles-container .left-side .all-content h1 {
+   position: absolute;
+   bottom: 0;
+   margin-bottom: 2rem;
+}
 
