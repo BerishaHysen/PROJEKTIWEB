@@ -173,7 +173,7 @@ ul{
 
 #header{
    background: url('../img/bg2.jpg') no-repeat center center/cover;
-   height: 400px;
+   height: 90vh;
    /* height: 100vh; */
    color: var(--light-color);
 }
