@@ -741,7 +741,209 @@ ul{
    border-bottom: .5px solid #d4d4d4;
 }
 
+/* SPORTS: HEADER */
 
+#sports .sports-container {
+   color: #f4f4f4;
+   min-height: 400px;
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   grid-gap: 0.1rem;
+}
+
+#sports .sports-container .right-side {
+   height: 100%;
+   display: grid;
+   align-content: flex-end;
+   position: relative;
+}
+#sports .sports-container .right-side:before {
+   content: '';
+   height: 100%;
+   width: 100%;
+   background: url('../img/bg2.jpg') no-repeat center center/cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+#sports .sports-container .right-side div {
+   z-index: 1;
+   /* margin: 20px 0; */
+   width: 60%;
+   background: rgba(0, 0, 0, 0.7);
+   padding: 20px;
+}
+
+#sports .sports-container .right-side div p{
+   padding: 10px 0;
+}
+
+#sports .sports-container .left-side  {
+   display: grid;
+}
+
+#sports .sports-container .left-side .photo {
+   display: grid;
+   align-content: flex-end;
+   position: relative;
+}
+
+#sports .sports-container .left-side .photo:before{
+   content: '';
+   height: 100%;
+   width: 100%;
+   background: url('../img/bg2.jpg') no-repeat center center/cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+   
+}
+
+#sports .sports-container .left-side .photo {
+   padding: 5px;
+}
+
+#sports .sports-container .left-side .photo div {
+   padding: 2px 5px;
+   background: rgba(0, 0, 0, 0.7);
+   z-index: 1;
+   cursor: pointer;
+}
+
+#sports .sports-container .left-side .photo div h1,
+#sports .sports-container .left-side .photo div p {
+   padding: 2px 0;
+   font-size: .9rem;  
+}
+
+/* SPORTS SECTION-1 */
+#sports-section {
+   color: var(--light-color);
+}
+
+#sports-section .container > h1 {
+   color: var(--blue-color);
+   padding-bottom: 5px;
+}
+
+#sports-section .section-content {
+   height: 500px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: .1rem;
+}
+
+#sports-section .section-content .a {
+   background: url('../img/foto2.jpg') no-repeat center center/cover;
+   position: relative;
+}
+
+#sports-section .section-content .a .all-content {
+   height: 100%;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.5); 
+}
+
+#sports-section .section-content .a .all-content .text-content {
+   position: absolute;
+   bottom: 10px;
+   left: 5px;
+   right: 5px;
+}
+
+#sports-section .section-content .a .all-content .text-content div{
+   padding-top: 5px;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+#sports-section .section-content .a .all-content .text-content div p{
+   color: rgb(180, 180, 180);
+}
+
+/* SPORTS SECTION-2 */
+#sports-section2 {
+   min-height: 300px;
+   /* width: 70%; */
+}
+
+#sports-section2 .sports-content {
+   display: grid;
+   grid-template-columns: 70% 30%;
+   grid-gap: 1rem;
+}
+
+#sports-section2 .container > h1 {
+   color: var(--blue-color);
+   padding-bottom: 1rem;
+}
+
+#sports-section2 .sports-content .left-side .fotoja {
+   height: 300px;
+   background: url('../img/foto3.jpg') no-repeat center center/cover;
+}
+
+
+#sports-section2 .sports-content .left-side .content {
+   margin-bottom: 1rem;
+   padding-bottom: 1rem;
+   padding-right: 1rem;
+   border-bottom: 1px solid var(--blue-color);
+   border-right: 1px solid var(--blue-color);
+}
+#sports-section2 .sports-content .left-side .content a{
+   padding: 10px 20px;
+   border: none;
+}
+
+#sports-section2 .sports-content .left-side .content p
+{
+   padding: 10px 0;
+   font-size: 15px;
+}
+#sports-section2 .sports-content .left-side .content h1 {
+   font-size: 2rem;
+}
+
+#sports-section2 .sports-content .left-side .content:last-child{
+   border: none;
+}
+
+#sports-section2 .sports-content .right-side .contents {
+   cursor: pointer;
+   display: grid;
+   grid-template-columns: 60% 40%;
+   grid-gap: 1rem;
+   padding: 2rem 0;
+   border-bottom: 1px solid var(--blue-color);
+
+}
+
+#sports-section2 .sports-content .right-side .contents p {
+   padding-top: 1rem;
+}
+
+#sports-section2 .sports-content .right-side .contents:first-child{
+   padding-top: 0;
+}
+
+#sports-section2 .sports-content .right-side .contents:last-child {
+   grid-template-columns: 1fr;
+   border: 0;
+}
+#sports-section2 .sports-content .right-side .contents a {
+   padding: 10px 20px;
+}
+
+#sports-section2 .sports-content .right-side .contents .fotoja {
+   width: 100%;
+   height: 150px;
+   background: url('../img/foto3.jpg') no-repeat center center/cover;
+}
 
 
 
