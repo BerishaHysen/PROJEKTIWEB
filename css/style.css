@@ -945,6 +945,49 @@ ul{
    background: url('../img/foto3.jpg') no-repeat center center/cover;
 }
 
+/* TECHS: HEADER */
+#techs-header {
+   min-height: 300px;
+}
+
+#techs-header .techs-content{
+   display: grid;
+   grid-gap: 0.1rem;
+   grid-template-columns: repeat(3, 1fr);
+   height: 80vh;
+}
+
+#techs-header .techs-content .contents {
+   background: url('../img/foto3.jpg') no-repeat center center/cover;
+}
+
+#techs-header .techs-content .haha {
+   height: 100%;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+   color: var(--light-color);
+   padding: 10px;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+#techs-header .techs-content .haha .text-content p {
+   padding-top: 5px;
+   padding-bottom: 5px;
+
+}
+
+
+#techs-header .techs-content .first {
+   grid-column: 3 span / 4;
+   grid-row: 3 span / 2;
+}
+
+
 
 
 /* FOOTER */
