@@ -118,9 +118,10 @@ ul{
 
 }
 
+/* --------------------------------------------------------------- */
+/* index.html */
 /* NAVBAR */
 #navbar{
-   /* max-height: 100px; */
    background: #fff;
    position: sticky;
    top: 0;
@@ -134,8 +135,15 @@ ul{
    height: 100%;
 }
 
-#navbar .logo {
+#navbar .content .logo {
    width: 50px;
+   background: #db1c0f; 
+   border-radius: 50%; 
+   margin: 5px 0;
+}
+
+#navbar .content .logo:hover {
+   background: #cc1a0d; 
 }
 
 #navbar .content ul {
@@ -152,17 +160,17 @@ ul{
    border-bottom: 1px solid var(--gray-color);
 }
 
-#navbar .content .pjesa-majtas {
+#navbar .content .right-side {
    display: flex;
    align-items: center;
 
 }
 
-#navbar .content .pjesa-majtas .login {
+#navbar .content .right-side .login {
    width: 30px;
 }
 
-#navbar .content .button input {
+#navbar .content .right-side .search-box input {
    background: var(--light-color);
    padding: 5px 10px;
    border-radius: 32px;
@@ -170,23 +178,15 @@ ul{
    margin-right: 15px;
 }
 
-#navbar .content .button input:focus{
+#navbar .content .right-side .search-box input:focus{
    outline: none;
+   padding: 4px 9px;
    border: 1px solid var(--red-color);
 }
 
-#navbar .content .logo {
-   background: #db1c0f; 
-   border-radius: 50%; 
-   margin: 5px 0;
-}
 
-#navbar .content .logo:hover {
-   background: #cc1a0d; 
-}
-
+/* --------------------------------------------------------------- */
 /* HEADER */
-
 #header{
    background: url('../img/foto2.jpg') no-repeat center center/cover;
    height: 90vh;
@@ -968,6 +968,10 @@ ul{
 }
 
 /* TECHS: HEADER */
+.primary-a {
+   color: var(--violet-color);
+}
+
 #techs-header {
    min-height: 300px;
 }
