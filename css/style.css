@@ -482,7 +482,7 @@ ul{
 
 
 #pjesa-4 .pjesa-4-content .left-side .left-side-content {
-   background: linear-gradient(to top, rgba(172, 14, 14, 0.5), rgba(0,0,0,0.7));
+   background: linear-gradient(to top, rgba(102, 32, 32, 0.3), rgba(0,0,0,0.7));
    height: 100%;
 }
 
@@ -498,7 +498,17 @@ ul{
 
 #pjesa-4 .pjesa-4-content .left-side .left-side-content .left-side-text .haha {
    display: flex;
+   align-items: center;
 } 
+
+#pjesa-4 .pjesa-4-content .left-side .left-side-content .left-side-text .txt {
+   margin-left: 30px;
+}
+
+#pjesa-4 .pjesa-4-content .left-side .left-side-content .left-side-text .txt p {
+   color: var(--red-color);
+   font-weight: 800;
+}
 
 #pjesa-4 .pjesa-4-content .right-side {
    color: #333;
@@ -548,6 +558,7 @@ ul{
 
 #pjesa-4 .pjesa-4-content .right-side .contact-btn:hover {
    background: var(--gray-color);
+   transition: 1s ease;
    
 }
 
