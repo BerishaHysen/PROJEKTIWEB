@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Daily NEWS | Home</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+   <div class="lr-foto">
+      <div class="lr-container">
+         <div class="photo">
+            <div class="haha">
+               <div class="text">
+                  <img src="./img/logowhite.png" alt="">
+                  <h1>JOIN THE LARGEST NEWS WEBSITE IN THE WORLD</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rem error alias mollitia laborum tenetur optio eligendi tempora reiciendis excepturi, molestiae eos numquam vitae aut quibusdam corrupti iusto nesciunt voluptatibus?</p>
+                  <!-- <h1 style="font-size: 30px;">DAILYNEWS</h1> -->
+               </div>
+            </div>
+         </div>
+         <form id="form" class="form">
+            <a class="thex"><i class="fas fa-times fa-3x" onclick="goBack()"></i></a>
+            <div id="login" class="login display">
+               <h2>Login <span>DailyNEWS</span></h2>
+               <p class="message" >Not a member ? <a onclick="changeForm(1)" id="reg" >Sign up now</a></p>
+               <div class="form-control">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" placeholder="Enter email" autocomplete="off" />
+                  <small>Error message</small>
+               </div>
+               <div class="form-control">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" placeholder="Enter password" />
+                  <small>Error message</small>
+               </div>
+               <button type="submit" id="button1">Sign In</button>
+            </div>
+
+            <div id="register" class="register hidden">
+               <h2>Join <span>DailyNEWS</span></h2>
+               <p class="message">Already a member ? <a id="log" onclick="changeForm(0)">Login now</a></p>
+               <div class="form-control">
+                  <label for="firstname">First name</label>
+                  <input type="text" id="firstname" placeholder="Enter first name" autocomplete="off"/>
+                  <small>Error message</small>
+               </div>
+               <div class="form-control">
+                  <label for="lastname">Last name</label>
+                  <input type="text" id="lastname" placeholder="Enter Last name" autocomplete="off"/>
+                  <small>Error message</small>
+               </div>
+               <div class="form-control">
+                  <label for="email">Email</label>
+                  <input type="text" id="emaill" placeholder="Enter email" autocomplete="off" />
+                  <small>Error message</small>
+               </div>
+               <div class="form-control">
+                  <label for="password">Password</label>
+                  <input type="password" id="passwordd" placeholder="Enter password" />
+                  <small>Error message</small>
+               </div>
+               <div class="form-control">
+                  <label for="password">Password</label>
+                  <input type="password" id="passwordd2" placeholder="Enter password" />
+                  <small>Error message</small>
+               </div>
+               <button type="submit" id="button2">Create Account</button>
+
+            </div>
+         </form>
+
+      </div>
+   </div>
+
+
+
+   <script src="./js/script.js"></script>
+</body>
+
+</html>
