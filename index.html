@@ -239,26 +239,26 @@
                            <i class="fas fa-map-marker-alt fa-2x"></i>
                         </div>
                         <div class="txt">
-                        <h1>Location</h1>
-                        <p>4025 Pride Avenue, 11361 Bayside, NY</p>
-                     </div>
-                     </div>
-                     <div class="haha">
-                        <div class="ikon">
-                        <i class="fas fa-phone-volume fa-2x"></i>
-                     </div>
-                        <div class="txt">
-                        <h1>Telephone</h1>
-                        <p>+594654665414</p>
-                     </div>
+                           <h1>Location</h1>
+                           <p>4025 Pride Avenue, 11361 Bayside, NY</p>
+                        </div>
                      </div>
                      <div class="haha">
                         <div class="ikon">
-                        <i class="fas fa-envelope fa-2x"></i>
-                     </div>
+                           <i class="fas fa-phone-volume fa-2x"></i>
+                        </div>
                         <div class="txt">
-                        <h1>Email US</h1>
-                        <p>something@example.com</p>
+                           <h1>Telephone</h1>
+                           <p>+594654665414</p>
+                        </div>
+                     </div>
+                     <div class="haha">
+                        <div class="ikon">
+                           <i class="fas fa-envelope fa-2x"></i>
+                        </div>
+                        <div class="txt">
+                           <h1>Email US</h1>
+                           <p>something@example.com</p>
                         </div>
                      </div>
    
@@ -269,18 +269,29 @@
                <div class="right-side-content">
                   <h2 class="py-1">CONTACT US</h2>
                   <div class="contact-us">
-                     <label for="name">Full Name</label>
-                     <input type="text" id="contact-name" placeholder="Enter Name" autocomplete="off" />
-                     <label for="email">Email</label>
-                     <input type="text" id="contact-email" placeholder="Enter Email" autocomplete="off" />
-                     <label for="Number">Phone Number</label>
-                     <input type="phone" id="contact-pn" placeholder="Enter Phone Number" autocomplete="off" />
-                     <label for="message">Message</label>
-                     <textarea style="resize: none;" name="message" id="message" cols="30" rows="10"  placeholder="Enter Message"></textarea>
-                     <small>Error message</small>
-                     
+                     <div class="form-control">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="contact-name" placeholder="Enter Name" autocomplete="off" />
+                        <small>Error message</small>
+                     </div>
+                     <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="text" id="contact-email" placeholder="Enter Email" autocomplete="off" />
+                        <small>Error message</small>
+                     </div>
+                     <div class="form-control">
+                        <label for="Number">Phone Number</label>
+                        <input type="phone" id="contact-pn" placeholder="Enter Phone Number" autocomplete="off" />
+                        <small>Error message</small>
+                     </div>
+                     <div class="from-control">
+                        <label for="message">Message</label>
+                        <textarea style="resize: none;" name="message" id="message" cols="30" rows="10"
+                           placeholder="Enter Message"></textarea>
+                        <small>Error message</small>
+                     </div>
                   </div>
-                  <button class="contact-btn">SUBMIT</button>
+                  <button onclick="myFunction3();" type="submit" class="contact-btn" id="button3">Create Account</button>
                </div>
             </div>
          </div>
@@ -355,7 +366,8 @@
          </div>
       </div>
    </footer>
-
+   <!-- <script src="./js/script2.js"></script> -->
+   <script src="./js/script.js"></script>
 </body>
 
 </html>

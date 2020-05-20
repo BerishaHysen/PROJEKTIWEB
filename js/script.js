@@ -25,7 +25,14 @@ function changeForm(form) {
  const emaill = document.getElementById('emaill');
  const passwordd = document.getElementById('passwordd');
  const password2 = document.getElementById('password2');
- 
+
+ const form3 = document.getElementById('button3');
+ const contactName = document.getElementById('contact-name');
+ const contactEmail = document.getElementById('contact-email');
+ const contactPN = document.getElementById('contact-pn');
+ const message = document.getElementById('message');
+
+
  // Show input error message
  function showError(input, message) {
    const formControl = input.parentElement;
@@ -39,6 +46,7 @@ function changeForm(form) {
    const formControl = input.parentElement;
    formControl.className = 'form-control success';
  }
+
  
  // Check email is valid
  function checkEmail(input) {
@@ -49,7 +57,7 @@ function changeForm(form) {
      showError(input, 'Email is not valid');
    }
  }
- 
+
  
  // Check input length
  function checkLength(input, min, max) {
@@ -108,26 +116,35 @@ function changeForm(form) {
  function getFieldName(input) {
    return input.id.charAt(0).toUpperCase() + input.id.slice(1);
  }
- 
- // Event listeners
- form1.addEventListener('click', function(e) {
-   e.preventDefault();
-   checkRequired([email, password]);
-   checkEmail(email);
-   checkLength(password, 6, 25);
- });
- 
- form2.addEventListener('click', function(e) {
-   e.preventDefault();
-   checkRequired([firstname, lastname, emaill, passwordd, passwordd2]);
-   checkLength(firstname, 3, 15);
-   checkLength(lastname, 3, 15);
-   checkLengthForPassword(passwordd, 6, 25);
-   checkEmail(emaill);
-   checkPasswordsMatch(passwordd, passwordd2);
- });
- 
- 
+
+
+function myFunction(){
+    event.preventDefault();
+    checkRequired([email, password]);
+    checkEmail2(email);
+    checkLength(password, 6, 25);
+}
+
+function myFunction2(){
+    event.preventDefault();
+    checkRequired([firstname, lastname, emaill, passwordd, passwordd2]);
+    checkLength(firstname, 3, 15);
+    checkLength(lastname, 3, 15);
+    checkLengthForPassword(passwordd, 6, 25);
+    checkEmail(emaill);
+    checkPasswordsMatch(passwordd, passwordd2);
+}
+
+
+
+function myFunction3(){
+  event.preventDefault();
+  checkRequired[contactName, contactEmail, contactPN, message];
+  checkLength(contactName, 3, 15);
+  checkEmail(contactEmail);
+  checkLength(contactPN, 10, 20);
+  checkLength(message, 20, 40);
+}
  
  
  // const asd
