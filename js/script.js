@@ -47,6 +47,20 @@ function changeForm(form) {
    formControl.className = 'form-control success';
  }
 
+  
+ // Check required fields
+ function checkRequired(inputArr) {
+  inputArr.forEach(function(input) {
+    if (input.value.trim() == '') {
+      // showError(input, `${getFieldName(input)} is required`);
+      showError(input, `${getFieldName(input)} is required`);
+    } else {
+      showSuccess(input);
+    }
+  });
+}
+
+
  
  // Check email is valid
  function checkEmail(input) {
@@ -91,19 +105,7 @@ function changeForm(form) {
      showSuccess(input);
    }
  }
- 
- // Check required fields
- function checkRequired(inputArr) {
-   inputArr.forEach(function(input) {
-     if (input.value.trim() == '') {
-       // showError(input, `${getFieldName(input)} is required`);
-       showError(input, 'Password is required');
-     } else {
-       showSuccess(input);
-     }
-   });
- }
- 
+
  
  // Check passwords match
  function checkPasswordsMatch(input1, input2) {
@@ -121,7 +123,7 @@ function changeForm(form) {
 function myFunction(){
     event.preventDefault();
     checkRequired([email, password]);
-    checkEmail2(email);
+    checkEmail(email);
     checkLength(password, 6, 25);
 }
 
@@ -134,8 +136,6 @@ function myFunction2(){
     checkEmail(emaill);
     checkPasswordsMatch(passwordd, passwordd2);
 }
-
-
 
 function myFunction3(){
   event.preventDefault();
