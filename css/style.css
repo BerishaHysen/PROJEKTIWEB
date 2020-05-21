@@ -561,116 +561,103 @@ ul{
    border-color: var(--red-color);
 }
 
-/* POLITICS */
+/* ---------------------------------------------------------- */
+/* politics.html: POLITICS */
+/* politics.html =  HEADER */
 #politics {
-   min-height: 400px;
    background: var(--gray-color);
    color: var(--light-color);
+   min-height: 800px;
 }
 
-#politics .header-container {
+#politics .header-content {
    display: grid;
+   grid-template-rows: 2fr 1fr;
    grid-gap: 1rem;
+   height: 100%;
+   width: 100%;
 }
 
-#politics .header-container .exp {
-   color: #fff;
-   background: #333;
-   padding: 2rem;
+/* politics.html =  HEADER --> TOP-SIDE*/
+#politics .header-content .top-side {
+   background: url('../img/p-foto5.jpg') no-repeat center center/cover;
+   width: 100%;
    position: relative;
- }
+}
 
- #politics .header-container .exp .haha {
-    padding: 20px 40px;
-    background-color: rgba(0, 0, 0, .5);
- }
- 
- #politics .header-container .exp:before {
-   content: '';
-   background: url('../img/foto1.jpg') no-repeat center center/cover;
-   position: absolute;
-   top: 0;
-   left: 0;
+#politics .header-content .top-side .content {
+   background: rgba(0, 0, 0, 0.4);
    width: 100%;
    height: 100%;
-   opacity: .7;
- }
+}
 
- #politics .header-container .exp:hover {
-    background: rgba(0, 0, 0, 0.2);
- }
+#politics .header-content .top-side .content .text-content{
+   height: 100%;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   padding: 0 0 30px 30px;
+}
 
- #politics .header-container .exp .right-side {
+#politics .header-content .top-side .content .text-content p {
+   padding: 10px 0;
+}
+
+#politics .header-content .top-side .btn {
+   padding: 10px 20px;
+}
+#politics .header-content .top-side .btn:hover{
+   padding: 9px 19px;
+}
+
+/* politics.html =  HEADER --> BOTTOM-SIDE*/
+#politics .header-content .bottom-side {
    display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   align-items: end;
-   height: 60vh;
- }
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 1rem;
+   min-height: 200px;
+   width: 100%;
+}
 
- #politics .header-container .exp .right-side h1,
- #politics .header-container .exp .right-side p {
-    padding-bottom: 10px;
- }
+#politics .header-content .bottom-side .photo {
+   height: 100%;
+   width: 100%;
+}
 
- #politics .header-container .exp .right-side a{
-    padding: 10px 20px;
- }
+#politics .header-content .bottom-side .text-content p {
+   padding: 20px 0;
+   text-align: justify;
+}
 
- #politics .header-container .exp .right-side .haha {
-    z-index: 1;
- }
+#politics .header-content .bottom-side .text-content a {
+   margin-bottom: 20px;
+}
 
- #politics img {
-    width: 100%;
- }
+#politics .header-content .bottom-side .pjesa-1 .photo {
+   background: url('../img/p-foto6.jpg') no-repeat center center/cover;
+}
+#politics .header-content .bottom-side .pjesa-2 .photo {
+   background: url('../img/p-foto4.jpg') no-repeat center center/cover;
+}
+#politics .header-content .bottom-side .pjesa-3 .photo {
+   background: url('../img/p-foto1.jpg') no-repeat center center/cover;
+}
+#politics .header-content .bottom-side .pjesa-4 .photo {
+   background: url('../img/p-foto3.jpg') no-repeat center center/cover;
+}
 
- #politics .header-container .right-side {
-    z-index: 1;
- }
-
-
- #politics .header-container .left-side {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2rem;
- }
-
- #politics .header-container .left-side div div {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    color: #a0a0a0;
- }
-
- #politics .header-container .left-side div h1 {
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--red-color);
-    margin-bottom: 5px;
- }
-
- #politics .header-container .left-side div  p{
-    text-align: justify;
- }
-
-
-/* POLITICS: SECTION */
-
+/* politics.html =  SECTION */
 #politics-section {
    min-height: 500px;
 }
 
 #politics-section .titles {
-   color: #db1c0f; padding-bottom: 1rem;
+   color: #db1c0f; 
+   padding-bottom: 1rem;
    display: flex;
    justify-content: space-between;
 }
-
-#politics-section .foto {
-   height: 100px;
-   background: url('../img/foto1.jpg') no-repeat center center/cover;
-}
-
 
 #politics-section .section-container {
    display: grid;
@@ -678,76 +665,98 @@ ul{
    grid-gap: 2rem;
 }
 
-#politics-section .section-container .right-side{
-   padding: 1rem 1rem;
+/* politics.html =  SECTION --> Left-Side */
+#politics-section .section-container .left-side{
+   padding: 1rem;
    border: .5px solid #d4d4d4;
 }
 
-#politics-section .section-container .right-side .content {
+#politics-section .section-container .left-side .content {
    display: grid;
    grid-template-columns: 1fr 2fr;
-   grid-gap: 2rem;
-   /* padding-bottom: 3rem;
-   border-bottom: .5px solid #d4d4d4; */
-   padding: 3rem;
+   grid-gap: 1rem;
+   padding: 1rem;
    border-bottom: .5px solid #d4d4d4;
 }
 
-#politics-section .section-container .right-side .last {
+
+#politics-section .section-container .left-side .content {
+   height: 180px;
+   width: 100%;
+}
+
+#politics-section .foto-1 {
+   background: url('../img/p-foto2.jpg') no-repeat center center/cover;
+}
+#politics-section .foto-2 {
+   background: url('../img/p-foto1.jpg') no-repeat center center/cover;
+}
+#politics-section .foto-3 {
+   background: url('../img/p-foto3.jpg') no-repeat center center/cover;
+}
+#politics-section .foto-4 {
+   background: url('../img/p-foto4.jpg') no-repeat center center/cover;
+}
+#politics-section .foto-5 {
+   background: url('../img/p-foto5.jpg') no-repeat center center/cover;
+}
+#politics-section .foto-6 {
+   background: url('../img/p-foto6.jpg') no-repeat center center/cover;
+}
+#politics-section .foto-7 {
+   background: url('../img/p-foto7.jpg') no-repeat center center/cover;
+}
+
+#politics-section .section-container .left-side .content .text-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+#politics-section .section-container .left-side .last{
    border: none;
 }
 
-
-#politics-section .section-container .right-side .content .content-2 {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   
-}
-
-#politics-section .section-container .right-side .content .content-2 div {
+#politics-section .section-container .left-side .content .text-content div {
    display: flex;
    justify-content: space-between;
-   align-content: space-between;
 }
 
-#politics-section .section-container .right-side .content .content-2 .social a{
+#politics-section .section-container .left-side .content .text-content div .social a{
    margin: 0 10px;
 }
-
-#politics-section .section-container .right-side .content .content-2 div p {
-   color: #969696;
-   /* padding-right: 20px; */
-}
-
-#politics-section .section-container .right-side .content .content-2 div .social a:hover {
+#politics-section .section-container .left-side .content .text-content div .social a:hover {
    color: var(--red-color);
 }
 
-#politics-section .section-container .right-side .more-content {
-   padding: 10px 20px;
-   /* display: flex; */
-   
+#politics-section .section-container .left-side .content .text-content div p {
+   color: #969696;
 }
 
 #politics-section .section-container .more-content{
+   margin-top: 10px;
+   padding: 10px 20px;
    display: flex;
    justify-content: center;
-
+}
+#politics-section .section-container .more-content:hover{
+   padding: 9px 19px;
+   border: 1px solid var(--gray-color);
 }
 
-#politics-section .section-container .left-side {
+/* politics.html =  SECTION --> Right-Side*/
+#politics-section .section-container .right-side {
    padding: 2rem;
    border: .5px solid #d4d4d4;
 }
 
-#politics-section .section-container .left-side .content div {
+#politics-section .section-container .right-side .content div {
    padding: 2rem 0;
    border-bottom: .5px solid #d4d4d4;
 }
 
+/* ------------------------------------------------------- */
 /* SPORTS: HEADER */
-
 #sports .sports-container {
    color: #f4f4f4;
    min-height: 400px;
