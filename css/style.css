@@ -848,12 +848,7 @@ ul{
    padding: 10px 0;
 }
 
-#tech-section .section-content .po {
-   color: var(--light-color);
-   background: #333;
-}
-
-#tech-section .section-content .po2 {
+#tech-section .section-content .bg-dark {
    color: var(--light-color);
    background: #333;
 }
