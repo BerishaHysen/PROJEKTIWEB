@@ -207,7 +207,6 @@ ul{
 
 /* index.html =  SECTION: pjesa-1 */
 #pjesa-1 {
-   min-height: 300px;
    background: var(--light-color);
    color: var(--light-color);
 }
@@ -219,6 +218,7 @@ ul{
 
 #pjesa-1 .articles-container {
    display: grid;
+   height: 60vh;
    grid-template-columns: 1.5fr 1fr;
    grid-gap: 1rem;
 }
@@ -226,7 +226,7 @@ ul{
 /* index.html =  SECTION: pjesa-1 -> Left-Side */
 #pjesa-1 .articles-container .left-side {
    background: url('../img/p-foto1.jpg') no-repeat center center/cover;
-   height: 300px;
+   height: 100%;
    position: relative;
 }
 
@@ -291,11 +291,11 @@ ul{
 
 /* index.html =  SECTION: pjesa-2 */
 #pjesa-2 {
-   min-height: 600px;
    background: var(--light-color);
 }
 
 #pjesa-2 .articles-container {
+   /* height: 70vh; */
    display: grid;
    grid-template-columns: 2fr 1fr;
    justify-content: space-between;
@@ -316,6 +316,7 @@ ul{
 }
 
 #pjesa-2 .articles-container .left-side {
+   min-height: 80vh;
    display: grid;
    grid-gap: 1rem;
 }
@@ -324,7 +325,7 @@ ul{
    display: grid;
    grid-template-columns: 1fr 3fr;
    grid-gap: 1rem;
-   max-height: 200px;
+   height: 100%;
    align-items: center;
 }
 
@@ -354,11 +355,13 @@ ul{
 
 /* index.html =  SECTION: pjesa-2 --> Right-Side */
 #pjesa-2 .articles-container .right-side {
+   min-height: 80vh;
    display: grid;
    grid-gap: 1rem;
 }
 
 #pjesa-2 .articles-container .right-side .card{
+   height: 100%;
    display: grid;
    grid-template-columns: 1fr 3fr;
    grid-gap: 1rem;
@@ -383,14 +386,14 @@ ul{
 /* index.html =  SECTION: pjesa-3 */
 #pjesa-3 {
    background: var(--gray-color);
-   min-height: 300px;
+   /* min-height: 40vh; */
 }
 
 #pjesa-3 .articles-container{
    display: grid;
    grid-gap: 1rem;
    grid-template-columns: repeat(5, 1fr);
-   height: 300px;
+   height: 40vh;
 }
 
 #pjesa-3 .articles-container #vc {
@@ -1187,7 +1190,6 @@ ul{
 }
 
 #sports-section2 .sports-content .right-side .contents .fotoja1 {
-   
    background: url('../img/s-foto1.jpg') no-repeat center center/cover;
 }
 #sports-section2 .sports-content .right-side .contents .fotoja2 {
@@ -1212,7 +1214,7 @@ ul{
 /* ---------------------------------------------------------- */
 /* FOOTER */
 #footer {
-   min-height: 400px;
+   min-height: 40vh;
    background: var(--gray-color);
    color: var(--light-color);
 }
@@ -1234,6 +1236,7 @@ ul{
 }
 
 #footer .footer-container {
+   min-height: 40vh;
    display: grid;
    grid-template-columns: 1fr 3fr 0.5fr;
    grid-gap: 5rem;
