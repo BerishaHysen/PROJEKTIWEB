@@ -935,7 +935,7 @@ ul{
    background: url('../img/t-foto3.jpg') no-repeat center center/cover;
 }
 
-section .section-content .first-one{
+#tech-section .section-content .first-one{
    margin-bottom: 1rem;
 }
 #tech-section .section-content .first-one,
@@ -950,8 +950,9 @@ section .section-content .first-one{
 }
 
 
-/* ------------------------------------------------------- */
-/* SPORTS: HEADER */
+/* ---------------------------------------------------------- */
+/* sports.html: SPORTS */
+/* sports.html =  HEADER */
 #sports .sports-container {
    color: #f4f4f4;
    min-height: 80vh;
@@ -960,6 +961,7 @@ section .section-content .first-one{
    grid-gap: 0.1rem;
 }
 
+/* sports.html =  HEADER-->Right-Side */
 #sports .sports-container .right-side {
    height: 100%;
    display: grid;
@@ -970,10 +972,8 @@ section .section-content .first-one{
    content: '';
    height: 100%;
    width: 100%;
-   background: url('../img/bg2.jpg') no-repeat center center/cover;
+   background: url('../img/s-foto7.jpg') no-repeat center center/cover;
    position: absolute;
-   top: 0;
-   left: 0;
 }
 
 #sports .sports-container .right-side div {
@@ -987,6 +987,7 @@ section .section-content .first-one{
    padding: 10px 0;
 }
 
+/* sports.html =  HEADER-->Left-Side */
 #sports .sports-container .left-side  {
    display: grid;
 }
@@ -1001,11 +1002,16 @@ section .section-content .first-one{
    content: '';
    height: 100%;
    width: 100%;
-   background: url('../img/bg2.jpg') no-repeat center center/cover;
    position: absolute;
-   top: 0;
-   left: 0;
-   
+}
+#sports .sports-container .left-side .p1::before {
+   background: url('../img/s-foto1.jpg') no-repeat center center/cover;
+}
+#sports .sports-container .left-side .p2::before {
+   background: url('../img/s-foto5.jpg') no-repeat center center/cover;
+}
+#sports .sports-container .left-side .p3::before {
+   background: url('../img/s-foto8.jpg') no-repeat center center/cover;
 }
 
 #sports .sports-container .left-side .photo {
@@ -1025,7 +1031,7 @@ section .section-content .first-one{
    font-size: .9rem;  
 }
 
-/* SPORTS SECTION-1 */
+/* sports.html =  Section-1 */
 #sports-section {
    color: var(--light-color);
 }
@@ -1036,44 +1042,61 @@ section .section-content .first-one{
 }
 
 #sports-section .section-content {
-   height: 500px;
+   height: 80vh;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    grid-gap: .1rem;
 }
 
-#sports-section .section-content .a {
-   background: url('../img/foto2.jpg') no-repeat center center/cover;
+#sports-section .section-content .first {
+   background: url('../img/s-foto4.jpg') no-repeat center center/cover;
+   position: relative;
+}
+#sports-section .section-content .second {
+   background: url('../img/s-foto5.jpg') no-repeat center center/cover;
+   position: relative;
+}
+#sports-section .section-content .third {
+   background: url('../img/s-foto8.jpg') no-repeat center center/cover;
+   position: relative;
+}
+#sports-section .section-content .fourth {
+   background: url('../img/s-foto9.jpg') no-repeat center center/cover;
    position: relative;
 }
 
-#sports-section .section-content .a .all-content {
+#sports-section .section-content .all .all-content {
    height: 100%;
    top: 0;
    left: 0;
-   right: 0;
    background-color: rgba(0, 0, 0, 0.5); 
 }
 
-#sports-section .section-content .a .all-content .text-content {
+#sports-section .section-content .all .all-content .text-content {
    position: absolute;
    bottom: 10px;
-   left: 5px;
-   right: 5px;
+   left: 8px;
+   right: 8px;
 }
 
-#sports-section .section-content .a .all-content .text-content div{
+#sports-section .section-content .all .all-content .text-content div{
+   margin: 10px 0;
    padding-top: 5px;
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
 }
 
-#sports-section .section-content .a .all-content .text-content div p{
+#sports-section .section-content .all .all-content .text-content > p{
+   margin: 10px 0 20px 0;
+}
+
+#sports-section .section-content .all .all-content .text-content div p{
    color: rgb(180, 180, 180);
 }
 
-/* SPORTS SECTION-2 */
+
+/* sports.html =  Section-2 */
 #sports-section2 {
    min-height: 50vh;
    /* width: 70%; */
@@ -1090,26 +1113,35 @@ section .section-content .first-one{
    padding-bottom: 1rem;
 }
 
-#sports-section2 .sports-content .left-side .fotoja {
-   height: 300px;
-   background: url('../img/foto3.jpg') no-repeat center center/cover;
-}
+/* sports.html =  Section-2-->Left-Side */
 
+#sports-section2 .sports-content .left-side .f{
+   height: 50vh;
+   width: 100%;
+}
+#sports-section2 .sports-content .left-side .fotoja1 {
+   background: url('../img/s-foto3.jpg') no-repeat center center/cover;
+}
+#sports-section2 .sports-content .left-side .fotoja2 {
+   background: url('../img/s-foto4.jpg') no-repeat center center/cover;
+}
+#sports-section2 .sports-content .left-side .fotoja3 {
+   background: url('../img/s-foto2.jpg') no-repeat center center/cover;
+}
 
 #sports-section2 .sports-content .left-side .content {
    margin-bottom: 1rem;
-   padding-bottom: 1rem;
-   padding-right: 1rem;
+   padding: 0 1rem 1rem 0;
    border-bottom: 1px solid var(--blue-color);
    border-right: 1px solid var(--blue-color);
 }
+
 #sports-section2 .sports-content .left-side .content a{
    padding: 10px 20px;
    border: none;
 }
 
-#sports-section2 .sports-content .left-side .content p
-{
+#sports-section2 .sports-content .left-side .content p{
    padding: 10px 0;
    font-size: 15px;
 }
@@ -1121,6 +1153,7 @@ section .section-content .first-one{
    border: none;
 }
 
+/* sports.html =  Section-2-->Right-Side */
 #sports-section2 .sports-content .right-side .contents {
    cursor: pointer;
    display: grid;
@@ -1128,7 +1161,6 @@ section .section-content .first-one{
    grid-gap: 1rem;
    padding: 2rem 0;
    border-bottom: 1px solid var(--blue-color);
-
 }
 
 #sports-section2 .sports-content .right-side .contents p {
@@ -1143,14 +1175,38 @@ section .section-content .first-one{
    grid-template-columns: 1fr;
    border: 0;
 }
+
 #sports-section2 .sports-content .right-side .contents a {
    padding: 10px 20px;
+   border: none;
 }
 
-#sports-section2 .sports-content .right-side .contents .fotoja {
+#sports-section2 .sports-content .right-side .contents .f {
    width: 100%;
-   height: 150px;
-   background: url('../img/foto3.jpg') no-repeat center center/cover;
+   height: 25vh;
+}
+
+#sports-section2 .sports-content .right-side .contents .fotoja1 {
+   
+   background: url('../img/s-foto1.jpg') no-repeat center center/cover;
+}
+#sports-section2 .sports-content .right-side .contents .fotoja2 {
+   background: url('../img/s-foto2.jpg') no-repeat center center/cover;
+}
+#sports-section2 .sports-content .right-side .contents .fotoja3 {
+   background: url('../img/s-foto3.jpg') no-repeat center center/cover;
+}
+#sports-section2 .sports-content .right-side .contents .fotoja4 {
+   background: url('../img/s-foto4.jpg') no-repeat center center/cover;
+}
+#sports-section2 .sports-content .right-side .contents .fotoja5 {
+   background: url('../img/s-foto5.jpg') no-repeat center center/cover;
+}
+#sports-section2 .sports-content .right-side .contents .fotoja6 {
+   background: url('../img/s-foto6.jpg') no-repeat center center/cover;
+}
+#sports-section2 .sports-content .right-side .contents .fotoja7 {
+   background: url('../img/s-foto7.jpg') no-repeat center center/cover;
 }
 
 /* ---------------------------------------------------------- */
