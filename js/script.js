@@ -129,12 +129,12 @@ function myFunction(){
 
 function myFunction2(){
     event.preventDefault();
-    checkRequired([firstname, lastname, emaill, passwordd, passwordd2]);
+    checkRequired([firstname, lastname, emaill, passwordd, passwordConfirm]);
     checkLength(firstname, 3, 15);
     checkLength(lastname, 3, 15);
     checkLengthForPassword(passwordd, 6, 25);
     checkEmail(emaill);
-    checkPasswordsMatch(passwordd, passwordd2);
+    checkPasswordsMatch(passwordd, passwordConfirm);
 }
 
 function myFunction3(){
