@@ -1,2 +1,2 @@
 # PROJEKTIWEB
-GITHUB LINK: https://github.com/BerishaHysen/PROJEKTIWEB
+WEBSITE LINK: https://berishahysen.github.io/PROJEKTIWEB/
